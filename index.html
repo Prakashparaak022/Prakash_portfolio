@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash's Portfolio</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="./IMAGES/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <!-- Calendar -->
+    <link rel="stylesheet" type="text/css" href="./CSS/evo-calendar.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/evo-calendar.orange-coral.css">
+    <!-- feeedback  -->
+    <link rel="stylesheet" type="text/css" href="./CSS/feedback.css">
+
+</head>
+
+<!-- Navbar -->
+<div id="google_translate_element"></div>
+<header>
+    <section class="navbar-sec">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                <b class="headTitle">Prakash</b>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-house"></i>
+                                <p>Home</p>
+                            </a></li>
+                        <li class="nav-item"><a href="#education" class="nav-link"><i
+                                    class="fa-solid fa-graduation-cap"></i>
+                                <p>Education</p>
+                            </a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link" id="nav-link"><i
+                                    class="fa-solid fa-code"></i>
+                                <p>Skill</p>
+                            </a></li>
+                        <li class="nav-item"><a href="#project" class="nav-link"><i class="fa-solid fa-book"></i>
+                                <p>Project</p>
+                            </a></li>
+                        <li class="nav-item"><a href="#mywork" class="nav-link"><i
+                                    class="fa-solid fa-screwdriver-wrench"></i>
+                                <p>My Works</p>
+                            </a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-message"></i>
+                                <p>Contact</p>
+                            </a></li>
+                        <li class="nav-item"><a id="calendars" href="#calendardiv" onclick="toggleCalendar()" class="nav-link"><i
+                                    class="fa-solid fa-calendar"></i>
+                                <p>Calendar</p>
+                            </a></li>
+                        <li class="nav-item"><a id="translate" href="#google_translate_elements" onclick="toggleTranslator();googleTranslateElementInit()"
+                                class="nav-link"><i class="fa-solid fa-language"></i>
+                                <p>Translate</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+</header>
+<!-- Hero page -->
+
+<body>
+    <!-- Back to top button -->
+    <a id="button"></a>
+
+    <section id="home">
+        <div class="row col-12">
+            <div class="col-lg-6 p-5">
+                <div class="home-content">
+                    <!-- <img src="./IMAGES/arrow.png" alt="arrow">
+                    <img src="./IMAGES/dots.png" alt="dot"> -->
+                    <h1 class="mainTitle">I'm <span class="multiText">coder</span></h1>
+                    <h2 class="role">Full Stack Developer!</h2>
+                    <p>Hard work and positivity lead you to overcome any obstacle, ignore any doubter, learn from any
+                        mistake, and attract good things and people to your life.</p>
+                    <div class="button aboutButton">
+                        <button id="about-btn" class="button btn btn-primary" type="button">
+                            <a href="#about" class="aboutme">About me</a>
+                        </button>
+                    </div>
+                    <div class="sociallinks img-fluid" id="links">
+                        <li style="--i:0" class="linkedin">
+                            <a href="http://www.linkedin.com/in/prakash-m-82252130b" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li style="--i:1" class="instagram">
+                            <a href="https://instagram.com/paraak_edits?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                                    class="fab fa-instagram "></i></a>
+                        </li>
+                        <li style="--i:2" class="facebook">
+                            <a href="https://www.facebook.com/prakash.paraak?mibextid=ZbWKwL" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+                        <li style="--i:3" class="github">
+                            <a href="https://github.com/Prakashparaak022" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li style="--i:4" class="youtube">
+                            <a href="https://www.youtube.com/channel/UCzMAG1XHp5R1GKIGm-xgi2Q" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </li>
+                        <li style="--i:5" class="envelope">
+                            <a href="mailto:prakashparaak@gmail.com" target="_blank">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </li>                        
+                        <li style="--i:6" class="whatsapp">
+                            <a href="https://wa.me/6369855308" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ms-auto prakashBrush">
+                <div class="img">
+                    <img src="./IMAGES/Prakash2.png" class="prakash img-fluid" id="prakash" alt="prakash">
+                    <div class="brushes">
+                        <img src="./IMAGES/blue_brush.png" class="img-fluid " alt="blue brush" id="brush">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h5 id='expand' class="about-text text-center fw-bold">About Me</h5>
+        <div class="aboutContent">
+            <hr class="line">
+            <div class="d-md-flex align-items-center">
+                <div class="aboutimage">
+                    <img src="./IMAGES/prakashbg.png" class="img-fluid" alt="prakashbg">
+                </div>
+                <p class="aboutcolor">As a full-stack developer, I am passionate about building robust and scalable web applications that demonstrate my skills in both frontend and backend development. 
+                    In addition to coding, I also enjoy exploring other aspects of digital art, such as video editing with Premiere Pro and motion graphics with After Effects. 
+                    In my free time, I love watching anime and traveling with friends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education container mt-5" id="education">
+        <div class="educationTitle text-center">
+            <h1 class="container p-4">Career Journey & Academics</h1>
+        </div>
+        <div class="container internship mt-4"></div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-title text-center">
+                    <h2 class="card-title text-center">Professional Experience <i class="fa-solid fa-award golden"></i></h2>
+                </div>
+            </div>
+            <div class="card-deck">
+                <div class="card blueShadow">
+                    <div class="card-body">
+                        <div class="interns">
+                            <img class="card-img-top" src="./IMAGES/motivAI.png" alt="Montbleu Technologies">
+                            <div class="card1">
+                                <h5 class="card-title">Junior Software Engineer | Full Stack Developer</h5>
+                                <p class="card-text">Aug 2023 – Sep 2024</p>
+                                <p class="card-text">1.5 years of hands-on experience as a Full Stack Developer at Montbleu Technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card blueShadow">
+                    <div class="card-body">
+                        <div class="interns">
+                            <img class="card-img-top" src="./IMAGES/smartcliff.png" alt="SmartCliff Learning Solutions LLP">
+                            <div class="card1">
+                                <h5 class="card-title">MERN Stack Development Course</h5>
+                                <p class="card-text">April 2023 – Aug 2024</p>
+                                <p class="card-text">Completed a MERN Stack Development Course at SmartCliff Learning Solutions LLP, Coimbatore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container internship mt-4">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="card-title text-center">
+                        <h2 class="card-title text-center">Internships <i class="fa-solid fa-award golden"></i></h2>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="card blueShadow">
+                        <div class="card-body">
+                            <div class="interns">
+                                <img class="card-img-top" src="./IMAGES/zinnov.png" alt="Zinnov">
+                                <div class="card1">
+                                    <h5 class="card-title">Zinnov Management</h5>
+                                    <p class="card-text">Feb 2022 - May 2022</p>
+                                    <p class="card-text">Worked as a Market Research Intern at Draup for 3 months.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card blueShadow">
+                        <div class="card-body">
+                            <div class="interns">
+                                <img class="card-img-top" src="./IMAGES/ict1.png" alt="ICT Academy">
+                                <div class="card1">
+                                    <h5 class="card-title">ICT Academy</h5>
+                                    <p class="card-text">Nov 2022</p>
+                                    <p class="card-text">Completed Cyber Security course with "Grade A" under Microsoft Philanthropies' CyberShikshaa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="resume d-flex justify-content-center pt-5">
+            <button id="about-btn" class="button btn btn-primary " type="button">
+                <a href="./ASSETS/Prakash_Resume.pdf" class="aboutme" download="Prakash_Resume.pdf">Download CV</a>
+            </button>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-12">
+                <div class="card-title text-center">
+                    <h2>Education
+                        <i class="fa-solid fa-user-graduate violet"></i>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body UG blueShadow">
+                        <div class="card-text">
+                            <h5 class="card-subtitle">Undergraduate - Jansons Institute of Technology</h5>
+                            <p class="card-text">CGPA</p>
+                            <div class="percent">
+                                <hr>80%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body HSC blueShadow">
+                        <div class="card-text">
+                            <h5 class="card-subtitle">Higher Secondary - Govt Higher Secondary School</h5>
+                            <p class="card-text">Percentage</p>
+                            <div class="percent">
+                                <hr>65%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body SSLC blueShadow">
+                        <div class="card-text">
+                            <h5 class="card-subtitle">Secondary School - Govt Higher Secondary School</h5>
+                            <p class="card-text">Percentage</p>
+                            <div class="percent">
+                                <hr>85%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills -->
+    <section class="skills mt-4" id="skills">
+        <div class="title text-center pt-3">
+            <h1>My <span>Skills</span><i class="fa-solid fa-code blue ml-3"></i></h1>
+        </div>
+        <div class="myskills text-center pt-3">
+            <h1>Technical Skills</h1>
+            <div class="technicalskills d-lg-flex d-md-flex">
+                <div class="htmldiv p-4">
+                    <div class="imgs position-relative">
+                        <img src="./IMAGES/htmll.png" class="img-fluid" alt="html">
+                    </div>
+                    <h4>90%</h4>
+                </div>
+                <div class="htmldiv reactdiv p-5">
+                    <div class="img">
+                        <img src="./IMAGES/react.png" class="img-fluid" alt="react">
+                    </div>
+                    <h4 class="mt-1">90%</h4>
+                </div>
+                <div class="htmldiv javadiv p-4">
+                    <div class="imgs">
+                        <img src="./IMAGES/java.png" class="img-fluid" alt="java">
+                    </div>
+                    <h4>70%</h4>
+                </div>
+                <div class="htmldiv nodediv">
+                    <div class="imgs mt-4">
+                        <img src="./IMAGES/node.png" class="img-fluid" alt="node">
+                    </div>
+                    <h4 class="mt-1">70%</h4>
+                </div>
+                <div class="htmldiv jsdiv p-5">
+                    <div class="img text-center">
+                        <img src="./IMAGES/mysql.png" class="img-fluid" alt="mysql">
+                    </div>
+                    <h4 class="mt-2">90%</h4>
+                </div>
+            </div>
+
+            <div class="myskills1 text-center">
+                <h1>Editing Skills</h1>
+                <div class="personalSkills d-lg-flex d-md-flex pt-3">
+                    <div class="ae htmldiv">
+                        <div class="img text-center">
+                            <img src="./IMAGES/after-effects.png" class="img-fluid" alt="after effects"
+                                class="afterEffetcs">
+                        </div>
+                        <h4>80%</h4>
+                    </div>
+
+                    <div class="pr ae htmldiv">
+                        <div class="img">
+                            <img src="./IMAGES/premier.png" class="img-fluid" alt="premier pro" class="premierPro">
+                        </div>
+                        <h4>90%</h4>
+                    </div>
+
+                    <div class="ps ae htmldiv">
+                        <div class="img">
+                            <img src="./IMAGES/photoshop.png" class="img-fluid" alt="photoshop" class="photoshop">
+                        </div>
+                        <h4>70%</h4>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section class="project-section" id="project">
+        <h1 class="text-center">Projects<i class="fa-solid fa-book blue ml-3"></i></h1>
+        <div class="owl-carousel custom-carousel owl-theme">
+            <div class="item" style="background-image: url(./IMAGES/esp32_cam.jpg);">
+                <div class="item-desc">
+                    <h3>ESP32-CAM</h3>
+                    <p>we propose a video-based fire detection system using ESP32 CAM as a video source and YOLOv5 as a
+                        fire detection model.
+                        YOLOv5 is a single-stage object detection model that can detect fire and smoke in videos using
+                        features such as color, motion, shape, and deep learning.</p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./IMAGES/esp32_sensors.jpeg);">
+                <div class="item-desc">
+                    <h3>Esp32 with Sensors</h3>
+                    <p>DHT11 is a digital compound temperature and humidity sensor that gives a calibrated output. Soil
+                        moisture sensor is a device that measures the water content in the soil by using the resistance
+                        between two probes. You can use an ESP32 board to interface these sensors and send the data to a
+                        cloud platform like Blynk. Then you can use your smartphone or computer to access the data from
+                        anywhere.</p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./IMAGES/wild_fire.jpg);">
+                <div class="item-desc">
+                    <h3>Fire Detection</h3>
+                    <p>we propose a video-based fire detection system using ESP32 CAM as a video source and YOLOv5 as a
+                        fire detection model.
+                        YOLOv5 is a single-stage object detection model that can detect fire and smoke in videos using
+                        features such as color, motion, shape, and deep learning.</p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./IMAGES/tiger.jpg);">
+                <div class="item-desc">
+                    <h3>Animal Detection</h3>
+                    <p>To make YOLOv5 detect animals as well as fire and smoke, you need to train it on a dataset that
+                        contains images and annotations of animals in addition to fire and smoke.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Myworks -->    
+    <section class="mywork" id="mywork">
+        <h1 class="text-center">My Works <i class="fa-solid fa-screwdriver-wrench golden ml-1"></i></h1>
+        <div class="card text-center">
+            <div class=" card-body">
+                <div id="videoContainer" class="text-center">
+                    <video id="firstVideo" muted>
+                        <source src="./VIDEOS/zenitsu.mp4" type="video/mp4">
+                    </video>
+                    <video id="secondVideo" style="display: none;">
+                        <source src="./VIDEOS/AnimTransition.mp4" type="video/mp4">
+                    </video>
+                    <div id="hoverButton" class="btn btn-primary">Hover Me</div>
+                </div>
+        </div>
+
+        <div class="slick-carousel" id="carouselBox" style="display: none;">
+
+            <iframe id="slide-1" class="video videopp"
+            src="https://drive.google.com/file/d/1E4gpylJTQNrf5CK5txvmvd6WGQ5P3tfS/preview" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen style="width: 60%; height: auto; aspect-ratio: 16/9; display: block; margin: 0 auto; border-radius: 10px;">
+            </iframe>
+
+            <iframe id="slide-2" class="video videopp"
+            src="https://drive.google.com/file/d/1YsoYTNMA8MIFCFJiwrScirPGaHgejPQZ/preview" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen style="width: 60%; height: auto; aspect-ratio: 16/9; display: block; margin: 0 auto; border-radius: 10px;">
+            </iframe>
+
+            <iframe id="slide-3" class="video videopp"
+            src="https://drive.google.com/file/d/1Bf_1L7Je5_KjXO_NAWaNP9W9bRPr6CAD/preview" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen style="width: 60%; height: auto; aspect-ratio: 16/9; display: block; margin: 0 auto; border-radius: 10px;">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- form -->
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Me<i class="fa-solid fa-message blue ml-2"></i></h1>
+        <!-- Main frm -->
+        <div class="container d-flex justify-content-center align-items-center mt-3">
+
+            <!-- submit msg -->
+            <div class="row border rounded-5 p-3 bg-white shadow box-area">
+
+                <!-- leftbx -->
+                <div class="col-md-5 rounded-4 d-flex justify-content-center align-items-center flex-column left-box ">
+                    <div class="form-image mb-3">
+                        <img src="./IMAGES/contact.jpg" class="img-fluid" alt="contact">
+                    </div>
+                    <p class="text-black d-flex font-weight:600"><a title="My location" href="#map" id="mapnav"
+                            onclick="map();"><i
+                                class="fa-solid fa-location-dot"></i></a>1/44b,Pudhupalayam,Perumanallur,</p>
+                    <p class="text-black d-flex font-weight:600">Tirupur-641666</p>
+                </div>
+                <!-- right bx -->
+                <div class="col-md-7 p-3 right-box ">
+                    <div class="row align-items-center ms-5">
+                        <div class="header-text mb-4">
+                            <h3 class="text-center">Connect with me!</h3>
+
+                            <form id="form" class="ms-4 p-3 forms" name="form"
+                                onsubmit="sendEmail(); reset(); return false;" method="post">
+                                <div class="username">
+                                    <i class="fa fa-user"></i>
+                                    <label>Username <span style="color:red">*</span></label>
+                                    <input type="text" name="username" id="username"
+                                        class="form-control form-control-lg bg-light fs-6">
+                                    <small>Error Messgae</small>
+                                </div>
+
+                                <div class="email">
+                                    <i class="fa fa-envelope"></i>
+                                    <label>Email<span style="color:red">*</span></label>
+                                    <input type="email" name="email" id="email"
+                                        class="form-control form-control-lg bg-light fs-6">
+                                    <small>Error Messgae</small>
+                                </div>
+
+                                <div class="message">
+                                    <i class="fa fa-message"></i>
+                                    <label>write a message</label>
+                                    <textarea name="message" id="message"
+                                        class="input resize-none form-control form-control-lg bg-light fs-6" cols="38"
+                                        rows="1">
+                                    </textarea>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <button class="btn btn-lg btn-primary w-100 fs-6" type="submit"
+                                        onclick="checkInput()">submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="map text-center" id="map">
+        <h3>I'm Here<i class="fa-solid fa-location-dot"></i></h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15655.03376566872!2d77.359033!3d11.2055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9059e2b15cc53%3A0xf67c95e477d23056!2sPerumanallur%2C%20Tamil%20Nadu%20641666!5e0!3m2!1sen!2sin!4v1683852816558!5m2!1sen!2sin"
+            width="600" height="400" style="border:2px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- calendar -->
+    <div id="calendardiv">
+        <div id="calendar"></div>
+    </div>
+
+    <!-- feedback -->
+    <section class="wizard-section" id="feedbacks">
+        <div class="row no-gutters">
+            <h1 class="text-center">Feedback !</h1>
+            <div class="col-lg-6 col-md-6">
+                <div class="wizard-content-left d-flex justify-content-center align-items-center">
+                    <h1>Feedback form</h1>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="form-wizard">
+                    <form method="post" target="_blank" onsubmit="sendfeedback();;">
+                        <div class="form-wizard-header">
+                            <p>Fill all form fields to the next step</p>
+                            <ul class="list-unstyled form-wizard-steps clearfix">
+                                <li class="active"><span>1</span></li>
+                                <li><span>2</span></li>
+                                <li><span>3</span></li>
+                            </ul>
+                        </div>
+                        <fieldset class="wizard-fieldset show">
+                            <h5>User Information</h5>
+                            <div class="form-group">
+                                <input type="text" class="form-control wizard-required" id="fname">
+                                <label for="fname" class="wizard-form-text-label">First Name*</label>
+                                <div class="wizard-form-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control wizard-required" id="lname">
+                                <label for="lname" class="wizard-form-text-label">Last Name*</label>
+                                <div class="wizard-form-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control wizard-required" id="emails">
+                                <label for="email" class="wizard-form-text-label">Email*</label>
+                                <div class="wizard-form-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                Gender
+                                <div class="wizard-form-radio">
+                                    <input name="radio-name" id="radio1" type="radio">
+                                    <label for="radio1">Male</label>
+                                </div>
+                                <div class="wizard-form-radio">
+                                    <input name="radio-name" id="radio2" type="radio">
+                                    <label for="radio2">Female</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group clearfix">
+                                <a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+                            </div>
+                        </fieldset>
+                        <fieldset class="wizard-fieldset">
+                            <h5>Feedback</h5>
+                            <div class="form-group">
+                                <textarea class="form-control wizard-required" id="feedback1"></textarea>
+                                <label for="feedback" class="wizard-form-text-label">Your Feedback*</label>
+                                <div class="wizard-form-error"></div>
+                            </div>
+                            <h5>Improvements and Suggestions</h5>
+                            <div class="form-group">
+                                <textarea class="form-control" id="improvements"></textarea>
+                                <label for="improvements" class="wizard-form-text-label">Suggestions</label>
+                            </div>
+                            <div class="form-group clearfix">
+                                <a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+                                <a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="wizard-fieldset">
+                            <div class="form-group">Ratings:</div>
+                            <div class="stars">
+                                <form action="">
+                                    <input class="star star-5" id="star-5" type="radio" name="star" data-value="5" />
+                                    <label class="star star-5" for="star-5"></label>
+                                    <input class="star star-4" id="star-4" type="radio" name="star" data-value="4" />
+                                    <label class="star star-4" for="star-4"></label>
+                                    <input class="star star-3" id="star-3" type="radio" name="star" data-value="3" />
+                                    <label class="star star-3" for="star-3"></label>
+                                    <input class="star star-2" id="star-2" type="radio" name="star" data-value="2" />
+                                    <label class="star star-2" for="star-2"></label>
+                                    <input class="star star-1" id="star-1" type="radio" name="star" data-value="1" />
+                                    <label class="star star-1" for="star-1"></label>
+                                </form>
+                            </div>
+                            <input type="hidden" id="star-value" value="0">
+                            <div id="star-rating-value">Selected Star Rating: 0</div>
+                            <h5>Additional Comments</h5>
+                            <div class="form-group">
+                                <textarea class="form-control" id="comments"></textarea>
+                                <label for="comments" class="wizard-form-text-label">Additional Comments</label>
+                            </div>
+                            <div class="form-group clearfix">
+                                <a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+                                <button type="submit" class="form-wizard-submit float-right">Submit</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    </script>
+    <script>
+        function sendfeedback() {
+            Email.send({
+                SecureToken: "c8289b5e-8aeb-4b71-bbc5-d0248ee05843",
+                To: "prakashparaak@gmail.com",
+                From: "pracashparaak@gmail.com",
+                Subject: "You got feedback from: " + document.getElementById("fname").value,
+                Body:
+                    "First Name: " +
+                    document.getElementById("fname").value +
+                    "<br>Last Name: " +
+                    document.getElementById("lname").value +
+                    "<br>Email: " +
+                    document.getElementById("emails").value +
+                    "<br>Feedback: " +
+                    document.getElementById("feedback1").value +
+                    "<br>Suggestions: " +
+                    document.getElementById("improvements").value +
+                    "<br>Stars: " +
+                    document.getElementById("star-rating-value").textContent +
+                    "<br>Comments: " +
+                    document.getElementById("comments").value,
+            }).then((messages) => alert("Feedback submitted successfully")
+            );
+            window.open('./HTML/feedback.html', 'formresult');
+        }
+    </script>
+
+    <!-- footer -->
+
+    <footer class="" id="#footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footercontet d-flex align-items-center">
+            <div class="text-center">
+                <ul class="social-icons d-flex justify-content-center align-items-center">
+                    <li>
+                        <a href="http://www.linkedin.com/in/prakash-m-82252130b" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/paraak_edits?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/prakash.paraak?mibextid=ZbWKwL" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Prakashparaak022" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCzMAG1XHp5R1GKIGm-xgi2Q" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary text-center" id="feedbackBtn" onclick="feedback();">Feedback<i
+                        class="fa-solid fa-message"></i></button>
+                <!-- <p class="text-center">© 2023 Prakash. All rights reserved.</p> -->
+            </div>
+            <div class="weather">
+                <a target="_blank" href="https://www.booked.net/weather/coimbatore-38055"><img
+                        src="https://w.bookcdn.com/weather/picture/28_38055_1_1_3586ff_250_00005b_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=&domid=w209&anc_id=44019"
+                        class="position-relative" alt="booked.net" /></a><!-- weather widget end -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- Script -->
+    <script>
+        $(document).ready(function () {
+            var brushWidth = $('.brushes img').width();
+            var brushHeight = $('.brushes img').height();
+
+            $('#links li').css('transform', 'scale(' + (brushWidth / 100) + ')');
+
+            $(window).resize(function () {
+                brushWidth = $('.brushes img').width();
+                brushHeight = $('.brushes img').height();
+
+                $('#links li').css('transform', 'scale(' + (brushWidth / 100) + ')');
+            });
+        });
+    </script>
+
+    <!-- Clock -->
+    <script src="./JS/clock.js"></script>
+    <!-- SMTP -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- gtranslate -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <!-- feedback -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./JS/feedback.js"></script>
+
+    <!-- popup -->
+    <script src="./JS/popup.js"></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- calendar -->
+    <script src="./JS/evo-calendar.js"></script>
+
+    <!-- calendar -->
+    <script src="./JS/mycalendar.js"></script>
+
+    <!-- project slider -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"
+        src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+    <script src="./JS/slider.js"></script>
+
+
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+
+    <!-- JS -->
+    <script src="./JS/carousel.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script class="blinkText">
+        var typingEffect = new Typed(".multiText", {
+            strings: ["Coder", "Designer", "Prakash"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 700,
+        })
+    </script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- zindex -->
+    <script src="./JS/zindex.js"></script>
+
+    <!-- mywork -->
+    <script src="./JS/myworks.js"></script>
+
+    <!-- validation -->
+    <script src="./JS/validate.js"></script>
+
+    <!-- back to top -->
+    <script src="./JS/backtotop.js"></script>
+</body>
+
+</html>
